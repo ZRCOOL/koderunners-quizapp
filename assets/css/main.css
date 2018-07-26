@@ -1,0 +1,65 @@
+body {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+  }
+  body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.514),rgba(0, 0, 0, 0.514)),url("../img/todd-quackenbush-47562-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(2px);
+    z-index: -1;
+  }
+.questions {
+    color: white;
+    margin-top: 15vh;
+}
+.question-bar{
+    margin-top: 7%;
+    background-color: #cb2127;
+    font-size: 25px;
+    padding: 5px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #cb2127;
+}
+.answers{
+    list-style: none;
+    margin-top: 5%;
+    width: 100%;
+    margin-left: -15px;
+}
+.answer-box{
+    margin-top: 10px;
+    color: #cb2127;
+    background-color: #fff;
+    font-size:122%;
+    padding: 5px;
+    width: 100%;
+    border-top: 2px solid transparent;
+    transition: all 0.2s linear;
+    
+}
+.answer-box span{
+    background-color: #cb2127;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 10px;
+}
+.answer-box:hover{
+    
+    cursor: pointer;
+    color: #2ecc71;
+    
+    margin-left: 12px;
+     
+}
